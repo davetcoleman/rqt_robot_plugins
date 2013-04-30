@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>rqt_moveit</name>
-  <version>0.2.14</version>
+  <version>0.2.15</version>
   <description>
    A rqt-based monitoring tool for <a href = "http://ros.org/wiki/moveit">
    Moveit!</a> motion planner. This is still very experimental.
@@ -16,11 +16,6 @@
   <url type="bugtracker">https://github.com/ros-visualization/rqt_robot_plugins/issues</url>
 
   <buildtool_depend>catkin</buildtool_depend>
-  <run_depend>moveit_ros</run_depend>
-  <!-- 4/2/2013/Isaac/This pkg actually doesn't depend on moveit pkg. Still
-       I'm listing this dependency in order to clarify that this pkg is
-       related to moveit. May not be a good thing so alternative idea is
-       welcomed. -->
   <run_depend>rosnode</run_depend>
   <run_depend>rospy</run_depend>
   <run_depend>rqt_gui</run_depend>
@@ -29,7 +24,6 @@
   <run_depend>rqt_topic</run_depend>
   <run_depend>sensor_msgs</run_depend>
   
-  <!-- The export tag contains other, unspecified, tags -->
   <export>
     <rqt_gui plugin="${prefix}/plugin.xml" />
   </export>
